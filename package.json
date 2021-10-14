@@ -1,0 +1,31 @@
+{
+  "name": "tissue_biorespository",
+  "version": "1.0.0",
+  "description": "database and application for managing inventory of plant tissue samples with associated voucher metadata from GBIF  \r This applicaiton allows the user to upload a csv containing unique identifiers for tissue samples (materialSampleID), unique identifiers for associated voucher specimens (occurrenceID), and additional metadata as necessary. The applicaiton will then query the GBIF API for the associated voucher, based on the occurrenceID, and populate the local database with up to date metadata. A user can also upload all appropriate metadata via csv, when no voucher data is available on GBIF.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenverBotanicGardens/tissue_biorespository.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenverBotanicGardens/tissue_biorespository/issues"
+  },
+  "homepage": "https://github.com/DenverBotanicGardens/tissue_biorespository#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
